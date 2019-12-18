@@ -1,0 +1,44 @@
+.aimap-vml-shape {
+	width: 1px;
+	height: 1px;
+	}
+.lvml {
+	behavior: url(#default#VML); 
+	display: inline-block; 
+	position: absolute;
+	}
+	
+.aimap-control {
+	display: inline;
+	}
+
+.aimap-popup-tip {
+	width: 21px;
+	_width: 27px;
+	margin: 0 auto;
+	_margin-top: -3px;
+	
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	}
+.aimap-popup-tip-container {
+	margin-top: -1px;
+	}
+.aimap-popup-content-wrapper, .aimap-popup-tip {
+	border: 1px solid #bbb;
+	}
+
+.aimap-control-zoom {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3F000000',EndColorStr='#3F000000');
+	}
+.aimap-control-zoom a {
+	background-color: #eee;
+	}
+.aimap-control-zoom a:hover {
+	background-color: #fff;
+	}
+.aimap-control-layers-toggle {
+	}
+.aimap-control-attribution, .aimap-control-layers {
+	background: white;
+	}

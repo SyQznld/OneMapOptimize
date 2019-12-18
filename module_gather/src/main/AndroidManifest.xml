@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="appler.com.example.module_gather">
+
+    <application>
+        <activity android:name=".picshow.VideoShowActivity"></activity>
+        <activity
+            android:name=".picshow.PicShowActivity"/>
+        <activity
+            android:name=".selectpic.ImagePreviewActivity" />
+        <activity
+            android:name=".selectpic.ImageSelectActivity"/>
+        <activity android:name=".tblist.TbListActivity" />
+
+        <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+    </application>
+
+</manifest>

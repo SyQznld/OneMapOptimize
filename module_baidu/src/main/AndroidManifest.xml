@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oneMap.module.Baidu">
+
+    <application
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.BaiduActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait" />
+    </application>
+    <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+</manifest>

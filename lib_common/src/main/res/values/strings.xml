@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">移动管理系统</string>
+
+    <string name="current_internet_invalid">当前网络未连接</string>
+    <string name="internet_base_url_null">baseUrl不能为空</string>
+
+    <!--loading-->
+    <string name="loading">载入中···</string>
+
+    <!--EasyRecyclerView库的公用布局-->
+    <string name="more_loading">加载中…</string>
+    <string name="no_more">没有更多了</string>
+    <string name="load_error_resume">加载出错，点击重试</string>
+    <string name="more">更多</string>
+    <string name="no_data">暂无数据</string>
+
+
+    <!--在线智能分析-->
+    <!--分析结果部分-->
+    <string name="analysis_title">分析结果</string>
+    <string name="analysis_mianji">面积</string>
+    <string name="analysis_qu">区</string>
+    <string name="analysis_xiang">乡</string>
+    <string name="analysis_cun">村</string>
+    <string name="analysis_csgh">城市规划</string>
+    <string name="analysis_xzdl">现状地类</string>
+    <string name="analysis_tdlyztgh">土地利用总体规划</string>
+    <string name="analysis_jsydgzq">建设用地管制区</string>
+    <!--智能分析自由绘制部分-->
+    <string name="analysis_measure_title">智能分析</string>
+    <string name="analysis_measure_area">面积:</string>
+
+    <!--主页功能模块-->
+<!--    <string name="main_dddh">检索</string>-->
+    <string name="main_dddh">搜索</string>
+    <string name="main_measure">测量</string>
+    <string name="main_layer">图层</string>
+    <string name="main_search">地名</string>
+    <string name="main_gather">采集</string>
+    <string name="main_shpImport">shp导入</string>
+    <string name="main_tblist">图斑</string>
+    <string name="main_setting">设置</string>
+    <string name="main_more">更多</string>
+    <string name="main_docDes">手册</string>
+    <string name="main_analysis">分析</string>
+
+    <!--采集-->
+    <string name="gather_title">图斑采集</string>
+    <string name="gather_draw">图斑绘制</string>
+    <string name="gather_basicinfo">基本信息</string>
+    <string name="gather_user">人员</string>
+    <string name="gather_time">时间</string>
+    <string name="gather_tubanName">名称</string>
+    <string name="gather_tubanRemark">描述</string>
+    <string name="gatherdetail_title">图斑详情</string>
+
+    <string-array name="take_photo">
+        <item>本地相册</item>
+        <item>拍照</item>
+        <item>视频</item>
+    </string-array>
+
+    <!--图片展示-->
+    <string name="picshow_title">图片列表</string>
+    <string name="picshowAct_title">图片展示</string>
+    <string name="videoshowAct_title">视频播放</string>
+
+
+    <!--距离量算-->
+    <string name="measure_title">距离量算</string>
+    <string name="measure_distance">距离</string>
+    <string name="measure_area">面积</string>
+    <string name="measure_back">撤销</string>
+    <string name="measure_clear">清除</string>
+    <string name="measure_point">准心</string>
+    <string name="measure_hand">手绘</string>
+
+
+    <!--标注保存-->
+    <string name="tbremark_title">标注保存</string>
+    <string name="tbremark_tbTime">标注时间</string>
+    <string name="tbremark_tbType">标注类型</string>
+    <string name="tbremark_tbResult">标注信息</string>
+    <string name="tbremark_tbName">标注名称</string>
+    <string name="tbremark_tbRemark">标注描述</string>
+
+
+    <!--个人中心-->
+    <string name="setting_title">设置中心</string>
+
+
+
+
+</resources>

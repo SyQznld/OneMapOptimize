@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">module_gather</string>
+
+    <!--屏幕方向选择-->
+    <string-array name="screenOrientation">
+        <item>竖屏</item>
+        <item>横屏</item>
+    </string-array>
+
+    <string name="setScreen">设置屏幕方向</string>
+    <string name="portrait">竖屏</string>
+    <string name="landscape">横屏</string>
+
+</resources>

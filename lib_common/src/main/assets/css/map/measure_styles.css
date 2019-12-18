@@ -1,0 +1,135 @@
+﻿#cross {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: 7px;
+    z-index: 9999;
+    background: url(../images/cross.png) no-repeat;
+    border-radius: 15px;
+}
+
+#measure_clear {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    z-index: 9999;
+    background: url(../images/trash.png) no-repeat;
+    border-radius: 20px;
+    border: 1px solid #4848D2;
+}
+
+.measure_custom {
+    height: 27px;
+    width: 74px;
+    border: 0;
+    outline: 0;
+    z-index: 10000;
+    background: blue;
+    position: absolute;
+    left: 48px;
+    top: 77px;
+    background: url(../images/measure/measure.png);
+}
+
+
+.measure_marker {
+    margin-left: -4px;
+    margin-top: -3px;
+}
+
+    .measure_marker label {
+        white-space: nowrap;
+        background-color: yellow;
+        font-size: 30px;
+        padding-left:10px;
+    }
+
+    .measure_marker span {
+        white-space: nowrap;
+        background-color: yellow;
+        color: red;
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 2px;
+        font-size: 30px;
+    }
+
+.polygon_marker label {
+    white-space: nowrap;
+    background-color: #6868EF;
+    color: white;
+}
+
+#measure_toolbar {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 45px;
+    z-index: 9999;
+}
+
+    #measure_toolbar button {
+        margin-top: 7px;
+        height: 27px;
+        width: 57px;
+        border: 0;
+        outline: 0;
+    }
+
+    #measure_toolbar div {
+        float: left;
+        text-align: center;
+    }
+
+    #measure_toolbar .measure_back {
+        width: 20%;
+    }
+
+        #measure_toolbar .measure_back button {
+            background: url(../images/measure/measure_back.png) no-repeat;
+        }
+
+    #measure_toolbar .measure_m {
+        text-align: center;
+        border: 0;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+        #measure_toolbar .measure_m button {
+            background: url(../images/measure/measure_area.png) no-repeat;
+        }
+
+            #measure_toolbar .measure_m button:first-child {
+                background: url(../images/measure/measure_distance.png) no-repeat;
+            }
+
+            #measure_toolbar .measure_m button:last-child {
+                margin-left: 5px;
+                background: url(../images/measure/measure_end.png) no-repeat;
+            }
+
+    #measure_toolbar .measure_point {
+        float: right;
+        width: 20%;
+    }
+
+        #measure_toolbar .measure_point button {
+            background: url(../images/measure/measure_point.png) no-repeat;
+        }
+
+#measure_result {
+    position: absolute;
+    left: 15px;
+    top: 130px;
+    background: yellow;
+    font-size: 30px;
+    z-index: 9999;
+}

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.oneMap.module.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_load"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/mWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--地图功能模块   cardview-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            tools:ignore="RtlCompat">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--图层-->
+                <LinearLayout
+                    android:id="@+id/ll_main_layer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_layer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_layer"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_layer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+
+                <!--测量-->
+                <LinearLayout
+                    android:id="@+id/ll_main_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_measure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_measure"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_measure"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+                <!--百度导航-->
+                <LinearLayout
+                    android:id="@+id/ll_main_baidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_baidu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_daohang"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_dddh"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+
+                <!--搜索-->
+                <LinearLayout
+                    android:id="@+id/ll_main_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_search"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_search"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+
+                <!--分析-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_main_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_analysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_analysis"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_analysis"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+
+                <!--采集-->
+                <LinearLayout
+                    android:id="@+id/ll_main_gather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_gather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_gather"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_gather"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+
+                </LinearLayout>
+
+
+                <!--更多-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/ll_main_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_main_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_more"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="5dp"
+                        android:text="@string/main_more"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorTextAssistant" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/ib_zhunxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_baxin"
+            android:visibility="gone" />
+
+        <!--透明度进度条-->
+        <LinearLayout
+            android:id="@+id/ll_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cv_operation"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/cv_operation"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:layout_marginRight="@dimen/size_12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.oneMap.module.common.widget.seekbar.VerticalSeekBar
+                android:id="@+id/verticalSeekBar"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!--横竖屏切换-->
+        <ImageButton
+            android:id="@+id/ib_screen"
+            android:layout_width="@dimen/dimen_btn_size"
+            android:layout_height="@dimen/dimen_btn_size"
+            android:layout_above="@+id/ib_transparent"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/shape_white_circle"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_screen_land" />
+
+        <!--透明度-->
+        <ImageButton
+            android:id="@+id/ib_transparent"
+            android:layout_width="@dimen/dimen_btn_size"
+            android:layout_height="@dimen/dimen_btn_size"
+            android:layout_above="@+id/ib_reset"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape_white_circle"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_transparent" />
+        <!--复位-->
+        <ImageButton
+            android:id="@+id/ib_reset"
+            android:layout_width="@dimen/dimen_btn_size"
+            android:layout_height="@dimen/dimen_btn_size"
+            android:layout_above="@+id/ib_location"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:background="@drawable/shape_white_circle"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_home" />
+        <!--定位按钮-->
+        <ImageButton
+            android:id="@+id/ib_location"
+            android:layout_width="@dimen/dimen_btn_size"
+            android:layout_height="@dimen/dimen_btn_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:background="@drawable/shape_white_circle"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_main_dingwei" />
+
+        <TextView
+            android:id="@+id/tv_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

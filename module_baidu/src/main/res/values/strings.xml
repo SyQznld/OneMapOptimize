@@ -1,0 +1,6 @@
+<resources>
+    <string name="module_baidu_name">百度地图组件</string>
+
+    <string name="baidu_activity_title">百度地图</string>
+
+</resources>

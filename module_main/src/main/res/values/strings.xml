@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="module_main" tools:ignore="ExtraTranslation">main组件</string>
+
+    <string name="app_exit_hint">再按一次退出程序</string>
+
+
+</resources>

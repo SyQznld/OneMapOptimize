@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--底部导航栏透明度-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+    <!--无ActionBar的AppTheme-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--全屏-->
+    <style name="FullscreenTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+
+    <!-- 自定义loading dialog -->
+    <style name="ProgressDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+
+    <style name="AnimationBottomFade">
+        <item name="android:windowEnterAnimation">@anim/jump_from_down</item>
+        <item name="android:windowExitAnimation">@anim/jump_to_down</item>
+    </style>
+
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="PopWindowAnimStyle">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+
+
+    <!--主页更多弹框弹出与隐藏-->
+    <style name="MainMorePop">
+        <item name="android:windowEnterAnimation">@anim/danru_anim</item>
+        <item name="android:windowExitAnimation">@anim/danchu_anim</item>
+    </style>
+
+
+    <style name="RedAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/red_300</item>
+        <item name="colorPrimaryDark">@color/red_400</item>
+        <item name="colorAccent">@color/red_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="YellowAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/yellow_300</item>
+        <item name="colorPrimaryDark">@color/yellow_400</item>
+        <item name="colorAccent">@color/yellow_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="PurpleAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_300</item>
+        <item name="colorPrimaryDark">@color/purple_400</item>
+        <item name="colorAccent">@color/purple_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="BlueAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue_300</item>
+        <item name="colorPrimaryDark">@color/blue_400</item>
+        <item name="colorAccent">@color/blue_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="GreenAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/green_300</item>
+        <item name="colorPrimaryDark">@color/green_400</item>
+        <item name="colorAccent">@color/green_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="OrangeAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/orange_300</item>
+        <item name="colorPrimaryDark">@color/orange_400</item>
+        <item name="colorAccent">@color/orange_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="PinkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/pink_300</item>
+        <item name="colorPrimaryDark">@color/pink_400</item>
+        <item name="colorAccent">@color/pink_500</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="BlckAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/text_black_4d</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/text_908f94</item>
+        <!--标题栏透明度-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+</resources>
